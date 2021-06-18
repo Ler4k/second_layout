@@ -1,0 +1,126 @@
+header{
+    margin: 0;
+    background-color: #dcdcdc;
+    width: 100%;
+    height: 230px;
+    display: flex;
+    justify-content: center;
+}
+body{
+    margin: 0px;
+}
+#logo{
+    padding-top:65px;
+    height: 100px;
+    width: 273px;
+}
+#head_con{
+    display:flex ;
+    flex-direction: row;
+    width: 980px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+#num{
+    padding-top: 65px;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left:450px  ;
+    width: 257px;
+    height: 81px;
+    color: #767676;
+    font-family: 'Open Sans Condensed', sans-serif;;
+    font-size: 40px;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 46px;
+    text-align: right;
+}
+menu{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    background-color: #777777;
+    width: 100%;
+    padding-top: 26px;
+    padding-bottom: 26px;
+    box-sizing: border-box;
+}
+#menu-con{
+    display: flex;
+    justify-content: space-between;
+    width: 980px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+#menu-con a{
+
+    color: #ffffff;
+    font-family: "pt_sansregular",sans-serif;
+    font-size: 21px;
+    font-weight: 400;
+    text-align: center;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+#menu-con ul.cent_elem_m:before{
+    content: "|";
+    color: #ffffff;
+    padding-right: 30px;
+}
+#menu-con ul.cent_elem_m:after{
+    content: "|";
+    color: #ffffff;
+    padding-left: 30px;
+}
+
+#menu-con a:hover{
+    text-decoration: underline;
+}
+slider img{
+    width: 1248px;
+    height: 462px;
+}
+slider{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+content{
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+#group{
+    width: 980px;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#side-menu {
+    width: 350px;
+    height: 560px;
+    background-color: #777777;
+    margin-bottom: 195px;
+}
+#main-co{
+    margin-top: 20px;
+    width: 569px;
+    height: 493px;
+    background-color: #777777;
+}
+footer{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+#f_con{
+    background-color: #777777;
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 53px;
+}
