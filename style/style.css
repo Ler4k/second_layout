@@ -1,3 +1,7 @@
+@font-face {
+    font-family: 'Open Sans - Condensed';
+    src: url(fonts/OpenSansCondensed-Light.ttf);
+}
 header{
     margin: 0;
     background-color: #dcdcdc;
@@ -5,9 +9,10 @@ header{
     height: 230px;
     display: flex;
     justify-content: center;
+    position: relative;
 }
 body{
-    margin: 0px;
+    margin: 0;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -32,7 +37,7 @@ body{
     width: 257px;
     height: 81px;
     color: #767676;
-    font-family: 'Open Sans Condensed', sans-serif;;
+    font-family: 'Open Sans - Condensed', sans-serif;;
     font-size: 40px;
     font-style: normal;
     letter-spacing: normal;
@@ -40,63 +45,68 @@ body{
     text-align: right;
 }
 menu{
-    display: flex;
-    justify-content: center;
     margin: 0;
     background-color: #777777;
-    width: 100%;
     padding-top: 26px;
     padding-bottom: 26px;
-    box-sizing: border-box;
-    position: relative;
+    display: flex;
+    justify-content: center;
 }
 #menu-con{
     display: flex;
-    justify-content: space-between;
-    width: 980px;
+    justify-content: center;
     padding-left: 10px;
     padding-right: 10px;
+    box-sizing: border-box ;
 }
 #menu-con a{
 
     color: #ffffff;
     font-family: "pt_sansregular",sans-serif;
-    font-size: 21px;
+    font-size: 23px;
     font-weight: 400;
-    text-align: center;
     text-decoration: none;
     box-sizing: border-box;
 }
-#menu-con ul.cent_elem_m:before{
-    content: "|";
-    color: #ffffff;
-    padding-right: 30px;
+
+#menu-con ul.cent_elem_m:first-child:after {
+
 }
 #menu-con ul.cent_elem_m:after{
     content: "|";
     color: #ffffff;
-    padding-left: 30px;
+    padding-left: 35px;
+}
+
+#menu-con ul.cent_elem_m:last-child:after{
+    content: "";
 }
 
 #menu-con a:hover{
     text-decoration: underline;
 }
-slider img{
-    width: 1248px;
+#slider img{
+    width: 100%;
     height: 462px;
 }
-slider{
+#slider{
     background-color: #f9f9f9;
     width: 100%;
     display: flex;
     justify-content: center;
     position: absolute;
-
+    z-index: -1;
+    margin-top: 248px;
 }
-content{
-    padding-top: 420px;
+#sizer{
+    height: 462px;
+    width: 1284px;
+}
+#content{
+    padding-top: 430px;
     display: flex;
     justify-content: center;
+
 }
 #group{
     width: 980px;
@@ -107,10 +117,12 @@ content{
 }
 
 #side-menu {
-    width: 350px;
-    height: 560px;
     background-color: #777777;
     margin-bottom: 195px;
+    padding: 0 33px 100px 0;
+    font-family: "pt_sansregular",sans-serif;
+    text-align: right;
+
 }
 #side-menu h1{
     padding: 1px 167px 38px 36px ;
@@ -119,48 +131,45 @@ content{
     font-size: 33px;
     font-weight: 700;
     line-height: 46px;
-    text-align: left;
+    color: #ffffff;
 
 }
-#side-menu{
-    color: #ffffff;
+ #list-s a{
     font-family: "pt_sansregular",sans-serif;
-
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 400;
+    text-decoration: none;
 }
 #s-menu-con{
-    width: 325px;
-    height: 372px;
-}
-
-#s-menu-con ul{
-    font-size: 13px;
-    font-weight: 400;
+    color: #ffffff;
+    width: 340px;
+    font-size: 14px;
     text-align: left;
+    font-weight: 400;
 }
 #ar{
-    font-size: 13px;
-    padding: 20px;
-    text-align: right;
-    text-decoration: underline;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 400;
 
 }
 #main-co{
+    letter-spacing: -1.2px;
     margin-top: 20px;
     width: 569px;
     height: 493px;
     color: #767676;
     font-family: "pt_sansregular",sans-serif;
-    font-size: 13px;
-    font-weight: 400;
+    font-size: 14px;
     font-style: normal;
-    letter-spacing: normal;
     line-height: 22px;
     text-align: left;
 }
  #title{
      font-size: 35px;
      font-style: normal;
-     letter-spacing: 1px;
+     letter-spacing: -1.65px;
      line-height: normal;
  }
 footer{
@@ -185,37 +194,38 @@ footer{
     height: 35px;
     color: #ffffff;
     font-family: "pt_sansregular",sans-serif;
-    font-size: 13px;
+    font-size: 14px;
     font-weight: 400;
     font-style: normal;
     letter-spacing: normal;
     line-height: 22px;
     text-align: left;
 }
-#list{
-    width: 150px;
-    height: 117px;
+#list a{
     color: #ffffff;
     font-family: "pt_sansregular",sans-serif;
-    font-size: 13px;
+    font-size: 14px;
     font-weight: 400;
     font-style: normal;
     letter-spacing: normal;
     line-height: 26px;
     text-align: left;
-    padding-left: 166px;
-    text-decoration: underline;
+    padding-left: 164px;
+    flex-wrap: nowrap;
+}
+li{
+    width: 306px;
     list-style: none;
 }
 #company{
-    padding-left:239px;
+    padding-left:236px;
     display: flex;
     flex-direction: row;
-    width: 226px;
+    width: 240px;
     height: 33px;
     color: #ffffff;
     font-family: "pt_sansregular",sans-serif;
-    font-size: 13px;
+    font-size: 14px;
     font-weight: 400;
     font-style: normal;
     letter-spacing: normal;
