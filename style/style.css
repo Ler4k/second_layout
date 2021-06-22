@@ -152,6 +152,7 @@ menu{
     color: #ffffff;
     font-size: 14px;
     font-weight: 400;
+    box-sizing: border-box;
 
 }
 #main-co{
@@ -218,7 +219,7 @@ li{
     list-style: none;
 }
 #company{
-    padding-left:236px;
+    padding-left:234px;
     display: flex;
     flex-direction: row;
     width: 240px;
