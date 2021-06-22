@@ -8,6 +8,9 @@ header{
 }
 body{
     margin: 0px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 #logo{
     padding-top:65px;
@@ -45,6 +48,7 @@ menu{
     padding-top: 26px;
     padding-bottom: 26px;
     box-sizing: border-box;
+    position: relative;
 }
 #menu-con{
     display: flex;
@@ -82,12 +86,15 @@ slider img{
     height: 462px;
 }
 slider{
+    background-color: #f9f9f9;
     width: 100%;
     display: flex;
     justify-content: center;
+    position: absolute;
+
 }
 content{
-    padding-top: 30px;
+    padding-top: 420px;
     display: flex;
     justify-content: center;
 }
@@ -105,22 +112,118 @@ content{
     background-color: #777777;
     margin-bottom: 195px;
 }
+#side-menu h1{
+    padding: 1px 167px 38px 36px ;
+    width: 147px;
+    height: 28px;
+    font-size: 33px;
+    font-weight: 700;
+    line-height: 46px;
+    text-align: left;
+
+}
+#side-menu{
+    color: #ffffff;
+    font-family: "pt_sansregular",sans-serif;
+
+}
+#s-menu-con{
+    width: 325px;
+    height: 372px;
+}
+
+#s-menu-con ul{
+    font-size: 13px;
+    font-weight: 400;
+    text-align: left;
+}
+#ar{
+    font-size: 13px;
+    padding: 20px;
+    text-align: right;
+    text-decoration: underline;
+
+}
 #main-co{
     margin-top: 20px;
     width: 569px;
     height: 493px;
-    background-color: #777777;
+    color: #767676;
+    font-family: "pt_sansregular",sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 22px;
+    text-align: left;
 }
+ #title{
+     font-size: 35px;
+     font-style: normal;
+     letter-spacing: 1px;
+     line-height: normal;
+ }
 footer{
-    display: flex;
     height: 100%;
     width: 100%;
-    flex-direction: column;
-    justify-content: flex-end;
+    margin-top: auto;
+    background-color: #777777;
+    display: flex;
+    justify-content: center;
 }
 #f_con{
-    background-color: #777777;
-    width: 100%;
-    padding-top: 50px;
-    padding-bottom: 53px;
+
+    width: 980px;
+    padding: 50px 10px 53px 10px;
+    display: flex;
+    flex-direction: row;
+
+}
+#mail{
+
+    width: 200px;
+    height: 35px;
+    color: #ffffff;
+    font-family: "pt_sansregular",sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 22px;
+    text-align: left;
+}
+#list{
+    width: 150px;
+    height: 117px;
+    color: #ffffff;
+    font-family: "pt_sansregular",sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 26px;
+    text-align: left;
+    padding-left: 166px;
+    text-decoration: underline;
+    list-style: none;
+}
+#company{
+    padding-left:239px;
+    display: flex;
+    flex-direction: row;
+    width: 226px;
+    height: 33px;
+    color: #ffffff;
+    font-family: "pt_sansregular",sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 22px;
+    text-align: left;
+}
+#company img{
+    padding-right: 5px;
+    width: 36px;
+    height: 38px;
 }
